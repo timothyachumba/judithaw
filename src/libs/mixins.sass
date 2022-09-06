@@ -1,0 +1,40 @@
+$maxwidth: 1920
+
+@mixin xs
+  @media (min-width: 640px)
+    @content
+
+@mixin sm
+  @media (min-width: 920px)
+    @content
+
+@mixin md
+  @media (min-width: 1440px)
+    @content
+
+@mixin lg
+  @media (min-width: 1920px)
+    @content
+
+@function rem($value,$base:18)
+  @return ($value / $base) + rem
+
+@function vw($target)
+  $vw-context: 1680
+  @return (($target/$vw-context) * 100) + vw
+
+@function calc-vw($base,$multiplier:1.25)
+  $a: $base+px
+  $b: $multiplier+vw
+  @return calc(#{$a} + #{$b})
+
+@mixin scale-vw($prop,$base,$multiplier:1.25)
+  $a: $base+px
+  $b: $multiplier+vw
+  #{$prop}: calc(#{$a} + #{$b})
+
+  @include lg
+    #{$prop}: $base + ($maxwidth * ($multiplier / 100)) + px
+
+@function rscale($min,$max)
+  @return clamp(#{rem($min),vw($max), rem($max)})

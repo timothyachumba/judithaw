@@ -1,0 +1,18 @@
+.grid
+  display: grid
+  grid-template-columns: repeat(3,1fr)
+  column-gap: rscale(16,80)
+  padding: 0 rscale(16,80)
+  box-sizing: border-box
+
+  .col
+    padding: rscale(16,80) 0
+
+    &.col-1
+      grid-column: span 1
+
+    &.col-2
+      grid-column: span 2
+
+    &.col-3
+      grid-column: span 3
