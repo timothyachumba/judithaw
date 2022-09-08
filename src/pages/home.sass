@@ -1,7 +1,30 @@
 body
   background: $beige
 
-  .gallery-image-wrapper
+  .project-wrapper
 
-    div
+    .project
       margin-bottom: rscale(200,400)
+
+      .project-image
+        margin-bottom: rscale(16,24)
+        width: 100%
+
+        @inclde sm
+          min-width: auto
+
+      .project-text
+        font-size: 12px
+
+        .project-name
+          text-transform: uppercase
+          font-family: 'Factor A TRIAL'
+          letter-spacing: 0.05rem
+
+        .project-meta
+          font-family: 'Sometimes Times TRIAL'
+          font-weight: 500
+
+  #logo
+    display: block
+    margin-top: rscale(40,80)
