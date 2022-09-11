@@ -1,0 +1,11 @@
+title: Projects
+preset: pages
+
+drafts:
+  extends: sections/projects
+  label: Project Drafts
+
+listed:
+  extends: sections/projects
+  label: Published Projects
+  layout: cards

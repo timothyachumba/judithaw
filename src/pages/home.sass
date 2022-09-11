@@ -1,5 +1,17 @@
+html.has-scroll-smooth
+  overflow: hidden
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+
 body
   background: $beige
+
+  #logo
+    display: block
+    margin-top: rscale(40,80)
 
   .project-wrapper
 
@@ -25,6 +37,21 @@ body
           font-family: 'Sometimes Times TRIAL'
           font-weight: 500
 
-  #logo
-    display: block
-    margin-top: rscale(40,80)
+  #about
+
+    h1
+      font-family: 'Love'
+      font-size: rscale(60,100)
+      font-feature-settings: 'kern' 1, 'ss06', 'liga' 0
+      text-transform: uppercase
+      font-weight: 400
+      line-height: rscale(54,94)
+      letter-spacing: -0.05rem
+      margin: 0 0 rscale(40,80)
+      padding: 0 rscale(16,80)
+
+    p
+      font-family: 'Sometimes Times'
+      font-size: rscale(32,40)
+      margin: 0 0 rscale(16,40)
+      line-height: rscale(40,48)

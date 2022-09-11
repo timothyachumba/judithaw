@@ -2,41 +2,29 @@
 
 <?php 
 
-  $minWidth = 50;
+  $minWidth = 60;
   $maxWidth = 100;
-  $minHeight = 80;
-  $maxHeight = 150;
   $minOffset = 0;
   $maxOffset = $maxWidth - $minWidth;
   $align = array('left','right');
-  
-  $projects = range(1,20);
-  $projects = array_chunk($projects, (ceil(count($projects)/3)));
-
-  function random_color_part() {
-    return str_pad( dechex( mt_rand( 0, 255 ) ), 2, '0', STR_PAD_LEFT);
-  }
-
-  function random_color() {
-    return random_color_part() . random_color_part() . random_color_part();
-  }
+  $projects = $page->children()->listed()->shuffle();
+  $projects = $projects->chunk(ceil(count($projects)/3))
 
 ?>
 
 
-<main>
-  <div class="grid" id="gallery">
-    <?php foreach($projects as $key => $projectsColumn): ?>
+<div data-scroll-section>
+  <div data-scroll-section class="grid" id="gallery">
+
+    <?php $i = 0; foreach($projects as $projectcolumn): ?>
+
       <div class="col col-1">
-        <?php
-            if ($key === array_key_first($projects)) {
-              snippet('logo');
-            }
-        ?>
-        <?php foreach($projectsColumn as $project): ?>
+        
+        <?php if ($i == 0) {snippet('logo');} ?>
+
+        <?php foreach($projectcolumn as $project): ?>
           <?php 
             $width = rand($minWidth,$maxWidth);
-            $height = rand($minHeight,$maxHeight);
             $maxOffset = $maxWidth - $width;
             $offset = rand($minOffset,$maxOffset);
             $padding = rand(80,400);
@@ -50,11 +38,12 @@
           <div class="project-wrapper" style="display:flex;flex-direction:column;align-items:flex-<?= $flexAlign ?>;padding-top:<?= $padding ?>px">
               <div
                 class="project"style="width:<?= $width ?>%;margin-<?= $align[$key] ?>:<?= $offset ?>%">
-                  <div class="project-image"style="padding-bottom:<?= $height ?>%;;background-color:#<?= random_color() ?>">
-                  </div>
+                  <?php if($image = $project->cover()): ?>
+                    <img class="project-image" src="<?= $image->toFile()->url() ?>" alt="">
+                  <?php endif ?>
                   <div class="project-text">
-                    <h3 class="project-name">Project name</h3>
-                    <p class="project-meta"><span>Project Cateogry</span>, <span>Client</span></p>
+                    <h3 class="project-name"><?= $project->title() ?></h3>
+                    <p class="project-meta"><span><?= $project->category() ?></span>, <span><?= $project->client() ?></span></p>
                   </div>
                 
               </div>
@@ -62,9 +51,18 @@
           </div>
         <?php endforeach; ?>
       </div>
-    <?php endforeach; ?>
+    <?php $i++; endforeach; ?>
   </div>
-</main>
+  <div data-scroll-section id="about">
+    <h1><?= $page->about() ?></h1>
+    <div class="grid">
+      <div class="col col-1"></div>
+      <div class="col col-2">
+        <?= $page->abouttext()->kt() ?>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <?php snippet('footer') ?>
