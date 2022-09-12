@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy to dev server
+on:
+  push:
+    branches: [ dev ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      with:
+        ftp-server: ftp://ftp.akuko.studio/akuko/judithaw/
+        ftp-username: akuko
+        ftp-password: ${{ secrets.FTPS_PASSWORD }}
