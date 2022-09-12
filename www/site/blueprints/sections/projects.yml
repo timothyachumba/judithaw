@@ -4,7 +4,7 @@ parent: kirby.page('home')
 layout: cards
 template: project
 image:
-  query: page.images.template("cover").first
-  ratio: 3/2
+  query: page.cover.toFile
+  ratio: 2/3
   cover: true
 info: "{{ page.year }}"
