@@ -14,6 +14,10 @@ return [
 
   'url' => [
     'https://new.judithwoellenstein.com/'
+  ],
+
+  'panel' =>[
+    'install' => true
   ]
 
     
