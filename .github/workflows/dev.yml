@@ -15,6 +15,6 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ftp://ftp.akuko.studio/akuko/judithaw/
+        server: ftp.akuko.studio/akuko/judithaw/
         username: akuko
         password: ${{ secrets.FTPS_PASSWORD }}
