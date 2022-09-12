@@ -2,7 +2,7 @@
 ### Kirby ###
 # By default, git ignores all content from sub-pages folders
 # Comment the line below if you want git to handle all your content
-www/content/*/*/*
+# www/content/*/*/*
 
 www/media/*
 !www/media/index.html
@@ -31,16 +31,6 @@ stats.json
 logs
 *.log
 npm-debug.log*
-<<<<<<< HEAD
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-=======
->>>>>>> 1c4e911 (cleaned up the environment and build the logic for the gallery section)
 # Runtime data
 pids
 *.pid
