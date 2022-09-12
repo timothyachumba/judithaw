@@ -1,12 +1,13 @@
 .grid
   display: grid
   grid-template-columns: repeat(1,1fr)
-  column-gap: rscale(16,80)
+  column-gap: 0
   padding: 0 rscale(16,80)
   box-sizing: border-box
 
   @include sm
     grid-template-columns: repeat(3,1fr)
+    column-gap: rscale(16,80)
 
   .col
 
@@ -15,6 +16,14 @@
 
     &.col-2
       grid-column: span 2
+
+      &.col-right
+        grid-column-start: 1
+        grid-column-end: 4
+
+        @include sm
+          grid-column-start: 2
+        grid-column-end: 4
 
     &.col-3
       grid-column: span 3

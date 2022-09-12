@@ -13,8 +13,8 @@
 ?>
 
 
-<div data-scroll-section>
-  <div data-scroll-section class="grid" id="gallery">
+<div>
+  <div class="grid" id="gallery">
 
     <?php $i = 0; foreach($projects as $projectcolumn): ?>
 
@@ -53,11 +53,10 @@
       </div>
     <?php $i++; endforeach; ?>
   </div>
-  <div data-scroll-section id="about">
+  <div id="about">
     <h1><?= $page->about() ?></h1>
     <div class="grid">
-      <div class="col col-1"></div>
-      <div class="col col-2">
+      <div class="col col-2 col-right">
         <?= $page->abouttext()->kt() ?>
       </div>
     </div>
