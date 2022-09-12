@@ -163,3 +163,5 @@ Temporary Items
 .apdisk
 
 # <KirbyWebpack>
+www/kirby
+# </KirbyWebpack>
