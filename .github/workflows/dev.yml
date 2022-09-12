@@ -18,6 +18,5 @@ jobs:
         server: ftp.new.judithwoellenstein.com
         username: akuko
         password: ${{ secrets.FTPS_PASSWORD }}
-        dry-run: true
         local-dir: ./www/
         server-dir: ./akuko/judithaw/
