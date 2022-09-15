@@ -36,8 +36,7 @@
           ?>
           
           <div class="project-wrapper" style="display:flex;flex-direction:column;align-items:flex-<?= $flexAlign ?>;padding-top:<?= $padding ?>px">
-              <div
-                class="project"style="width:<?= $width ?>%;margin-<?= $align[$key] ?>:<?= $offset ?>%">
+              <a href="<?= $project->url() ?>" class="project"style="width:<?= $width ?>%;margin-<?= $align[$key] ?>:<?= $offset ?>%">
                   <?php if($image = $project->cover()->toFile()): ?>
                     <div class="project-image-container" style="background-color: <?= $project->accent() ?>">
                       <img
@@ -58,12 +57,12 @@
                     </noscript>
                     </div>
                   <?php endif ?>
-                  <div class="project-text">
+                  <div class="project-text" style="color:<?= $project->accent() ?>">
                     <h3 class="project-name"><?= $project->title() ?></h3>
                     <p class="project-meta"><span><?= $project->category() ?></span>, <span><?= $project->client() ?></span></p>
                   </div>
                 
-              </div>
+              </a>
               
           </div>
         <?php endforeach; ?>

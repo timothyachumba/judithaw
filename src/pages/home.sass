@@ -12,19 +12,24 @@ body
   #logo
     display: block
     margin-top: rscale(40,80)
-    width: 80%
+    position: sticky
+    top: rscale(40,80)
+    will-change: width
+
+    &.minimize
+      width: 50%
 
   .project-wrapper
 
     .project
       margin-bottom: rscale(80,400)
+      text-decoration: none
 
       .project-image-container
         overflow: hidden
         margin-bottom: rscale(16,24)
 
       .project-image
-
         display: block
         width: 100%
 
@@ -38,6 +43,7 @@ body
           text-transform: uppercase
           font-family: 'Factor A TRIAL'
           letter-spacing: 0.05rem
+          margin: 0 0 rscale(2,4) 0
 
         .project-meta
           font-family: 'Sometimes Times TRIAL'
