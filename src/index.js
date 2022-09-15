@@ -6,3 +6,5 @@
 //   multiplier: 0.75,
 //   scrollFromAnywhere: true
 // })
+
+import 'lazysizes'

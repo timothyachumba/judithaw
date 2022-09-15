@@ -6,6 +6,10 @@ Cover: - 2n3a9011.jpg
 
 ----
 
+Accent: #823826
+
+----
+
 Category: Art Direction
 
 ----

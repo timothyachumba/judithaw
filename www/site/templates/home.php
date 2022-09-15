@@ -39,7 +39,24 @@
               <div
                 class="project"style="width:<?= $width ?>%;margin-<?= $align[$key] ?>:<?= $offset ?>%">
                   <?php if($image = $project->cover()->toFile()): ?>
-                    <img class="project-image" srcset="<?= $image->srcset([800, 1200, 1600]) ?>" alt="">
+                    <div class="project-image-container" style="background-color: <?= $project->accent() ?>">
+                      <img
+                      class="project-image lazyload"
+                      data-src="<?= $image->thumb(['width' => 1200])->url() ?>"
+                      data-srcset="<?= $image->srcset([800, 1200, 1600]) ?>"
+                      src="<?= $image->thumb(['width' => 1200, 'quality' => 30])->url() ?>"
+                      width="<?= $image->width() ?>"
+                      alt=""
+                    >
+                    <noscript>
+	                    <img
+                        class="project-image"
+                        src="<?= $image->thumb(['width' => 1200])->url() ?>"
+                        srcset="<?= $image->srcset([800, 1200, 1600]) ?>"
+                        alt=""
+                      >
+                    </noscript>
+                    </div>
                   <?php endif ?>
                   <div class="project-text">
                     <h3 class="project-name"><?= $project->title() ?></h3>

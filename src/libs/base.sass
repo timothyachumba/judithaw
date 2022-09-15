@@ -50,3 +50,16 @@ button
 
 html
   font-size: 18px
+
+.lazyload,
+.lazyloading
+  opacity: 0
+  transform: scale(1.1)
+
+.lazyloaded
+  opacity: 1
+  transform: scale(1)
+  transition: all 1000ms 300ms cubic-bezier(.3,0,.08,1)
+
+.no-js img.lazyload
+  display: none

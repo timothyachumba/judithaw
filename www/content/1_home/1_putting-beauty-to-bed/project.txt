@@ -6,6 +6,10 @@ Cover: - 189a8782.jpg
 
 ----
 
+Accent: #687354
+
+----
+
 Category: Art Direction
 
 ----

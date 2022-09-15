@@ -6,6 +6,10 @@ Cover: - newness-4.jpg
 
 ----
 
+Accent: #908727
+
+----
+
 Category: Art Direction
 
 ----
