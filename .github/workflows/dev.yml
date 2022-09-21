@@ -20,3 +20,8 @@ jobs:
         password: ${{ secrets.FTPS_PASSWORD }}
         local-dir: ./www/
         server-dir: ./akuko/judithaw/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/content/**
