@@ -2,7 +2,11 @@ Title: Putting Beauty To Bed
 
 ----
 
-Cover: - 189a8782.jpg
+Cover:
+
+- 189a8782.jpg
+- 189a9585.jpg
+- 189a8946.jpg
 
 ----
 
