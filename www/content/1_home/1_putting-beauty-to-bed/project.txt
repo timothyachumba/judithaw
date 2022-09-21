@@ -22,7 +22,7 @@ Intro: <p>The accompanying article asks whether there should be a greater focus 
 
 ----
 
-Casestudy: 
+Casestudy: [{"attrs":[],"columns":[{"blocks":[{"content":{"images":["189a9149.jpg","189a8745.jpg","189a8822.jpg","189a8907.jpg","83260020.jpg","189a9702.jpg"]},"id":"c8207b8e-c19b-4acc-a881-bde2bfef51a7","isHidden":false,"type":"gallery"}],"id":"3f1a1930-8faa-4426-b104-5066c90b2baa","width":"1\/1"}],"id":"79495945-bf05-4690-8a63-542526638f99"}]
 
 ----
 

@@ -8,7 +8,16 @@
   $maxOffset = $maxWidth - $minWidth;
   $align = array('left','right');
   $projects = $page->children()->listed()->shuffle();
-  $projects = $projects->chunk(ceil(count($projects)/3))
+  // $projects = $projects->chunk(ceil(count($projects)/3));
+  $projectsCount = $projects->count();
+  $projectsGroup1Count = ceil($projectsCount / 3);
+  $projectsGroup2Count = ceil(($projectsCount - $projectsGroup1Count) / 2);
+  $projectsGroup3Count = $projectsCount - ($projectsGroup1Count + $projectsGroup2Count);
+
+  $projectsGroup1 = $projects->limit($projectsGroup1Count);
+  $projectsGroup2 = $projects->offset($projectsGroup1Count)->limit($projectsGroup2Count);
+  $projectsGroup3 = $projects->offset($projectsGroup1Count+$projectsGroup2Count)->limit($projectsGroup3Count);
+
 
 ?>
 
@@ -16,58 +25,19 @@
 <div>
   <div class="grid" id="gallery">
 
-    <?php $i = 0; foreach($projects as $projectcolumn): ?>
 
       <div class="col col-1">
-        
-        <?php if ($i == 0) {snippet('logo');} ?>
-
-        <?php foreach($projectcolumn as $project): ?>
-          <?php 
-            $width = rand($minWidth,$maxWidth);
-            $maxOffset = $maxWidth - $width;
-            $offset = rand($minOffset,$maxOffset);
-            $padding = rand(80,400);
-            $key = array_rand($align);
-            $flexAlign = 'start';
-            if ($key = 1) {
-              $flexAlign = 'end';
-            };
-          ?>
-          
-          <div class="project-wrapper" style="display:flex;flex-direction:column;align-items:flex-<?= $flexAlign ?>;padding-top:<?= $padding ?>px">
-              <a href="<?= $project->url() ?>" class="project"style="width:<?= $width ?>%;margin-<?= $align[$key] ?>:<?= $offset ?>%">
-                  <?php if($image = $project->cover()->toFile()): ?>
-                    <div class="project-image-container" style="background-color: <?= $project->accent() ?>">
-                      <img
-                      class="project-image lazyload"
-                      data-src="<?= $image->thumb(['width' => 1200])->url() ?>"
-                      data-srcset="<?= $image->srcset([800, 1200, 1600]) ?>"
-                      src="<?= $image->thumb(['width' => 1200, 'quality' => 30])->url() ?>"
-                      width="<?= $image->width() ?>"
-                      alt=""
-                    >
-                    <noscript>
-	                    <img
-                        class="project-image"
-                        src="<?= $image->thumb(['width' => 1200])->url() ?>"
-                        srcset="<?= $image->srcset([800, 1200, 1600]) ?>"
-                        alt=""
-                      >
-                    </noscript>
-                    </div>
-                  <?php endif ?>
-                  <div class="project-text" style="color:<?= $project->accent() ?>">
-                    <h3 class="project-name"><?= $project->title() ?></h3>
-                    <p class="project-meta"><span><?= $project->category() ?></span>, <span><?= $project->client() ?></span></p>
-                  </div>
-                
-              </a>
-              
-          </div>
-        <?php endforeach; ?>
+        <?php snippet('logo'); ?>
+        <?php snippet('project-group', ['projects' => $projectsGroup1]); ?>
       </div>
-    <?php $i++; endforeach; ?>
+
+      <div class="col col-1">
+        <?php snippet('project-group', ['projects' => $projectsGroup2]); ?>
+      </div>
+
+      <div class="col col-1">
+        <?php snippet('project-group', ['projects' => $projectsGroup3]); ?>
+      </div>
   </div>
   <div id="about">
     <h1><?= $page->about() ?></h1>
