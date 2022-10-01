@@ -1,0 +1,10 @@
+title: Default File
+
+fields:
+  alt:
+    label: Alt Text
+    type: text
+  focus:
+    label: My Focus Field
+    type: focus
+    width: 1/2

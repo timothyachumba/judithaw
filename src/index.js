@@ -7,4 +7,11 @@
 //   scrollFromAnywhere: true
 // })
 
+import fitty from 'fitty'
 import 'lazysizes'
+
+fitty('.fit')
+
+window.addEventListener('load', (event) => {
+  fitty('.fit')
+})

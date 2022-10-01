@@ -7,4 +7,4 @@
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <?= liveCSS('assets/builds/bundle.css') ?>
 </head>
-<body>
+<body class="<?= $page->template() ?>">

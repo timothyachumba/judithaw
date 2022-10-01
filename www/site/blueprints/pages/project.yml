@@ -35,6 +35,10 @@ columns:
   right:
     width: 2/3
     fields:
+      vanitytitle:
+        type: text
+        label: Vanity Title
+        help: This is we can use to create a more beautiful title section. You can use `</br>` to create line breaks. If left empty. The page title above will be used.
       intro:
         type: writer
         label: Introduction

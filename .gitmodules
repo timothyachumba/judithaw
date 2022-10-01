@@ -1,3 +1,9 @@
 [submodule "www/site/plugins/colors"]
 	path = www/site/plugins/colors
 	url = https://github.com/hananils/kirby-colors.git
+[submodule "site/plugins/focus"]
+	path = site/plugins/focus
+	url = https://github.com/flokosiol/kirby-focus.git
+[submodule "www/site/plugins/focus"]
+	path = www/site/plugins/focus
+	url = https://github.com/flokosiol/kirby-focus.git
