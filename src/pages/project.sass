@@ -21,38 +21,83 @@
         letter-spacing: -0.05rem
         text-align: center
         margin: rscale(24,80) 0 0
+        z-index: 1
+        position: relative
         // font-display: swap
 
         &.fit
           display: inline-block
           white-space: nowrap
 
-      .image
+      .image-container
         height: 50vw
         margin-top: -7%
-        background-size: cover
-        background-position: center
+        overflow: hidden
+        display: flex
+        justify-content: center
+        flex-direction: column
+
+        .image
+          height: 80vw
+          width: 100%
+          flex-shrink: 0
+          background-size: cover
+          background-position: center center
 
     #intro
       .intro-text
-        font-family: 'Sometimes Times'
-        font-size: rscale(20,28)
-        margin: 0 0 rscale(16,40)
-        line-height: rscale(28,36)
-
         p
           margin-bottom: rscale(24,40)
+          font-family: 'Sometimes Times'
+          font-size: rscale(24,32)
+          line-height: rscale(30,40)
+          margin: 0 0 rscale(16,40)
 
           &:last-child
             margin-bottom: 0
 
+    .meta-data
+      font-family: 'Sometimes Times TRIAL'
+      font-weight: 500
+      font-size: 14px
+
+      .meta-data-section
+        margin-bottom: rscale(24,40)
+
+        h4
+          text-transform: uppercase
+          font-family: 'Factor A TRIAL'
+          letter-spacing: 0.05rem
+          margin: 0 0 rscale(8,24) 0
+          font-size: 12px
+
+        ul
+          li
+            font-style: italic
+            list-style-type: none
+            margin: 0 0 rscale(12,32) 0
+            display: flex
+            align-items: flex-end
+
+            a
+              color: black
+
+            span
+              text-transform: uppercase
+              font-style: normal
+              font-family: 'Factor A TRIAL'
+              font-size: 12px
+              flex: 1
+
     .layout
-      margin: rscale(24,80) rscale(16,80)
+      margin: rscale(24,80) 0
       display: grid
       grid-template-columns: repeat(12,1fr)
       column-gap: rscale(16,80)
 
       .column
+        padding: 0 rscale(16,80)
+
         &.col-4
           grid-column: span 4 / span 4
         &.col-6
@@ -71,3 +116,30 @@
           max-height: calc(100vh - 80px)
           object-fit: contain
           object-position: center center
+
+        .sticky-container
+          background: red
+
+        .horizontal-gallery
+          display: inline-flex
+          flex-direction: row
+          flex-shrink: 0
+
+        #horizontal-gallery
+          display: inline-flex
+          justify-content: center
+
+          li
+            flex-shrink: 0
+            margin-right: 40px
+
+            &:last-child
+              margin-right: 0
+
+            figure
+              padding: 0 rscale(16,80)
+
+            img
+
+              max-height: 100vh
+              padding: rscale(16,80) 0

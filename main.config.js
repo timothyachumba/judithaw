@@ -8,7 +8,9 @@ const path = require('path')
  * The builds folder in www/assets is auto cleaned after each build.
  */
 const entries = {
-  'src/index.js': 'www/assets/builds/bundle.js',
+  'src/index.js': 'www/assets/builds/index.js',
+  'src/home.js': 'www/assets/builds/home.js',
+  'src/project.js': 'www/assets/builds/project.js',
   'src/index.sass': 'www/assets/builds/bundle.css'
 }
 

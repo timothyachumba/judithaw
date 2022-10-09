@@ -28,10 +28,23 @@ columns:
           - Editorial Writing
           - Production
           - Art Direction
-
       client:
+        label: Client
         type: text
-  
+      link:
+        label: Project Link
+        type: url
+      credits:
+        label: Project Credits
+        type: structure
+        fields:
+          role:
+            label: Role
+            type: text
+          name:
+            label: Name
+            type: text
+
   right:
     width: 2/3
     fields:
@@ -42,7 +55,6 @@ columns:
       intro:
         type: writer
         label: Introduction
-
       casestudy:
         type: layout
         label: Case Study

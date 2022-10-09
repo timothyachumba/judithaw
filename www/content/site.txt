@@ -1,1 +1,391 @@
 Title: Judith Achumba-Wöllenstein
+
+----
+
+Headline: My name is Judith Achumba-Wöllenstein — interior designer, art director, editorial writer and psychology of design specialist.
+
+----
+
+Text:
+
+I provide psychology-based interior design services via my studio’s website: (link: https://atelier.akuko.studio text: Atelier Akuko).
+
+I'm also the creative director of the Fashion Psychology Magazine HAJINSKY, which provides research insights into the human experience with fashion.
+
+Say hi, to discuss ways we can work together.
+
+----
+
+Listed:
+
+- 
+  id: home/putting-beauty-to-bed
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/putting-beauty-to-bed/1051987778-1664620900/189a8822.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/putting-beauty-to-bed/1051987778-1664620900/189a8822-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/putting-beauty-to-bed/1051987778-1664620900/189a8822-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/putting-beauty-to-bed/1051987778-1664620900/189a8822-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+putting-beauty-to-bed
+  sortable: true
+  text: Putting Beauty To Bed
+  dragText: '(link: home/putting-beauty-to-bed text: Putting Beauty To Bed)'
+  hasChildren: false
+  url: putting-beauty-to-bed
+- 
+  id: home/dressing-for-your-next-shift
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/dressing-for-your-next-shift/f708099631-1664620926/2n3a9011.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/dressing-for-your-next-shift/f708099631-1664620926/2n3a9011-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/dressing-for-your-next-shift/f708099631-1664620926/2n3a9011-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/dressing-for-your-next-shift/f708099631-1664620926/2n3a9011-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+dressing-for-your-next-shift
+  sortable: true
+  text: Dressing For Your Next Shift
+  dragText: '(link: home/dressing-for-your-next-shift text: Dressing For Your Next Shift)'
+  hasChildren: false
+  url: dressing-for-your-next-shift
+- 
+  id: home/the-pursuit-of-selling-newness
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/the-pursuit-of-selling-newness/a61dc10e1a-1664620936/newness-4.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/the-pursuit-of-selling-newness/a61dc10e1a-1664620936/newness-4-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/the-pursuit-of-selling-newness/a61dc10e1a-1664620936/newness-4-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/the-pursuit-of-selling-newness/a61dc10e1a-1664620936/newness-4-1408x.jpg
+      1408w
+  info: ""
+  link: >
+    /pages/home+the-pursuit-of-selling-newness
+  sortable: true
+  text: The Pursuit of Selling Newness
+  dragText: '(link: home/the-pursuit-of-selling-newness text: The Pursuit of Selling Newness)'
+  hasChildren: false
+  url: the-pursuit-of-selling-newness
+- 
+  id: home/clash-of-the-ages
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/clash-of-the-ages/1b924bc16e-1664620951/img062.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/clash-of-the-ages/1b924bc16e-1664620951/img062-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/clash-of-the-ages/1b924bc16e-1664620951/img062-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/clash-of-the-ages/1b924bc16e-1664620951/img062-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+clash-of-the-ages
+  sortable: true
+  text: Clash of the Ages
+  dragText: '(link: home/clash-of-the-ages text: Clash of the Ages)'
+  hasChildren: false
+  url: clash-of-the-ages
+- 
+  id: home/refugee-family-home
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/refugee-family-home/09a61656da-1664620971/akuko_atelier_refugee-home_web-12.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/refugee-family-home/09a61656da-1664620971/akuko-atelier-refugee-home-web-12-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/refugee-family-home/09a61656da-1664620971/akuko-atelier-refugee-home-web-12-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/refugee-family-home/09a61656da-1664620971/akuko-atelier-refugee-home-web-12-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+refugee-family-home
+  sortable: true
+  text: Refugee Family Home
+  dragText: '(link: home/refugee-family-home text: Refugee Family Home)'
+  hasChildren: false
+  url: refugee-family-home
+- 
+  id: home/deptford-dwelling
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/deptford-dwelling/be31395eb1-1664620958/akukobedroom_mural.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/deptford-dwelling/be31395eb1-1664620958/akukobedroom-mural-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/deptford-dwelling/be31395eb1-1664620958/akukobedroom-mural-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/deptford-dwelling/be31395eb1-1664620958/akukobedroom-mural-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+deptford-dwelling
+  sortable: true
+  text: Deptford Dwelling
+  dragText: '(link: home/deptford-dwelling text: Deptford Dwelling)'
+  hasChildren: false
+  url: deptford-dwelling
+- 
+  id: home/tweenager-s-bedroom
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/tweenager-s-bedroom/129009c3ab-1664620982/harrybedroom_deskwide.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/tweenager-s-bedroom/129009c3ab-1664620982/harrybedroom-deskwide-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/tweenager-s-bedroom/129009c3ab-1664620982/harrybedroom-deskwide-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/tweenager-s-bedroom/129009c3ab-1664620982/harrybedroom-deskwide-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+tweenager-s-bedroom
+  sortable: true
+  text: 'Tweenager&#039;s Bedroom'
+  dragText: "(link: home/tweenager-s-bedroom text: Tweenager's Bedroom)"
+  hasChildren: false
+  url: tweenager-s-bedroom
+- 
+  id: home/akuko-studio
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/akuko-studio/08b68b92cb-1664620990/b32a9388-hdr.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/akuko-studio/08b68b92cb-1664620990/b32a9388-hdr-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/akuko-studio/08b68b92cb-1664620990/b32a9388-hdr-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/akuko-studio/08b68b92cb-1664620990/b32a9388-hdr-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+akuko-studio
+  sortable: true
+  text: AKUKO Studio
+  dragText: '(link: home/akuko-studio text: AKUKO Studio)'
+  hasChildren: false
+  url: akuko-studio
+- 
+  id: home/from-baring-skin-to-bear-skinned
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/from-baring-skin-to-bear-skinned/5d5e013ac4-1664620991/cubicle_bear-skinned_image2.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/from-baring-skin-to-bear-skinned/5d5e013ac4-1664620991/cubicle-bear-skinned-image2-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/from-baring-skin-to-bear-skinned/5d5e013ac4-1664620991/cubicle-bear-skinned-image2-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/from-baring-skin-to-bear-skinned/5d5e013ac4-1664620991/cubicle-bear-skinned-image2-1408x.jpg
+      1408w
+  info: ""
+  link: >
+    /pages/home+from-baring-skin-to-bear-skinned
+  sortable: true
+  text: From Baring Skin to Bear-skinned
+  dragText: '(link: home/from-baring-skin-to-bear-skinned text: From Baring Skin to Bear-skinned)'
+  hasChildren: false
+  url: from-baring-skin-to-bear-skinned
+- 
+  id: >
+    home/from-fashion-fatigue-to-fit-for-the-future
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/from-fashion-fatigue-to-fit-for-the-future/e417917a68-1664620992/c01.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/from-fashion-fatigue-to-fit-for-the-future/e417917a68-1664620992/c01-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/from-fashion-fatigue-to-fit-for-the-future/e417917a68-1664620992/c01-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/from-fashion-fatigue-to-fit-for-the-future/e417917a68-1664620992/c01-1408x.jpg
+      1408w
+  info: ""
+  link: >
+    /pages/home+from-fashion-fatigue-to-fit-for-the-future
+  sortable: true
+  text: >
+    From Fashion Fatigue to Fit for the
+    Future
+  dragText: '(link: home/from-fashion-fatigue-to-fit-for-the-future text: From Fashion Fatigue to Fit for the Future)'
+  hasChildren: false
+  url: >
+    from-fashion-fatigue-to-fit-for-the-future
+- 
+  id: home/embodying-the-fashion-pose
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/embodying-the-fashion-pose/2b352aa9f4-1664620993/a05.png
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/embodying-the-fashion-pose/2b352aa9f4-1664620993/a05-352x.png
+      352w,
+      http://localhost:3000/media/pages/home/embodying-the-fashion-pose/2b352aa9f4-1664620993/a05-864x.png
+      864w,
+      http://localhost:3000/media/pages/home/embodying-the-fashion-pose/2b352aa9f4-1664620993/a05-1408x.png
+      1408w
+  info: ""
+  link: /pages/home+embodying-the-fashion-pose
+  sortable: true
+  text: Embodying the Fashion Pose
+  dragText: '(link: home/embodying-the-fashion-pose text: Embodying the Fashion Pose)'
+  hasChildren: false
+  url: embodying-the-fashion-pose
+- 
+  id: home/the-uniforms-that-shape-us
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/the-uniforms-that-shape-us/d3b8a7d63c-1664620993/13_3.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/the-uniforms-that-shape-us/d3b8a7d63c-1664620993/13-3-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/the-uniforms-that-shape-us/d3b8a7d63c-1664620993/13-3-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/the-uniforms-that-shape-us/d3b8a7d63c-1664620993/13-3-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+the-uniforms-that-shape-us
+  sortable: true
+  text: The Uniforms That Shape Us
+  dragText: '(link: home/the-uniforms-that-shape-us text: The Uniforms That Shape Us)'
+  hasChildren: false
+  url: the-uniforms-that-shape-us
+- 
+  id: home/more-than-a-white-coat
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/more-than-a-white-coat/c5b1a62059-1664620994/9_5.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/more-than-a-white-coat/c5b1a62059-1664620994/9-5-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/more-than-a-white-coat/c5b1a62059-1664620994/9-5-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/more-than-a-white-coat/c5b1a62059-1664620994/9-5-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+more-than-a-white-coat
+  sortable: true
+  text: More Than A White Coat
+  dragText: '(link: home/more-than-a-white-coat text: More Than A White Coat)'
+  hasChildren: false
+  url: more-than-a-white-coat
+- 
+  id: home/the-meanings-we-wear
+  image:
+    back: pattern
+    color: gray-500
+    cover: true
+    icon: page
+    ratio: 2/3
+    url: >
+      http://localhost:3000/media/pages/home/the-meanings-we-wear/b77a8927d4-1664620995/06_meanings_image1.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:3000/media/pages/home/the-meanings-we-wear/b77a8927d4-1664620995/06-meanings-image1-352x.jpg
+      352w,
+      http://localhost:3000/media/pages/home/the-meanings-we-wear/b77a8927d4-1664620995/06-meanings-image1-864x.jpg
+      864w,
+      http://localhost:3000/media/pages/home/the-meanings-we-wear/b77a8927d4-1664620995/06-meanings-image1-1408x.jpg
+      1408w
+  info: ""
+  link: /pages/home+the-meanings-we-wear
+  sortable: true
+  text: The Meanings We Wear
+  dragText: '(link: home/the-meanings-we-wear text: The Meanings We Wear)'
+  hasChildren: false
+  url: the-meanings-we-wear

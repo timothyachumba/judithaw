@@ -65,6 +65,7 @@
   "dependencies": {
     "@babel/runtime": "^7.12.18",
     "fitty": "^2.3.6",
+    "horizontal-scroll": "^1.1.0",
     "lazysizes": "^5.3.2",
     "locomotive-scroll": "^4.1.4"
   },

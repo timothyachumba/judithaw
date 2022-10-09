@@ -6,5 +6,6 @@
 
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <?= liveCSS('assets/builds/bundle.css') ?>
+  <?= css('assets/builds/locomotive-scroll.css') ?>
 </head>
-<body class="<?= $page->template() ?>">
+<body class="<?= $page->template() ?>" data-scroll-container>

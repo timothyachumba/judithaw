@@ -21,7 +21,7 @@
   ?>
   
   <div class="project-wrapper" style="display:flex;flex-direction:column;align-items:flex-<?= $flexAlign ?>;padding-top:<?= $padding ?>px">
-      <a href="<?= $project->url() ?>" class="project"style="width:<?= $width ?>%;margin-<?= $align[$key] ?>:<?= $offset ?>%">
+      <a data-scroll data-scroll-speed="<?= rand(1,5) ?>" href="<?= $project->url() ?>" class="project" style="width:<?= $width ?>%;margin-<?= $align[$key] ?>:<?= $offset ?>%">
           <?php if($image = $project->cover()->toFiles()->shuffle()->first()): ?>
             <div class="project-image-container" style="background-color: <?= $project->accent() ?>">
               <img

@@ -16,7 +16,26 @@ return [
     'http://192.168.1.22:3000/',
     'http://localhost:3000/'
 
-  ]
+  ],
+  'routes' => [
+        [
+          'pattern' => '(:any)',
+          'action'  => function($uid) {
+
+            $page = page($uid);
+            if(!$page) $page = page('home/' . $uid);
+            if(!$page) $page = site()->errorPage();
+
+            return site()->visit($page);
+          }
+        ],
+        [
+          'pattern' => 'home/(:any)',
+          'action'  => function($uid) {
+           go($uid);
+          }
+        ],
+      ]
 
     
   

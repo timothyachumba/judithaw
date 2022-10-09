@@ -7,7 +7,7 @@
   $minOffset = 0;
   $maxOffset = $maxWidth - $minWidth;
   $align = array('left','right');
-  $projects = $page->children()->listed()->shuffle();
+  $projects = $page->children()->listed();
   // $projects = $projects->chunk(ceil(count($projects)/3));
   $projectsCount = $projects->count();
   $projectsGroup1Count = ceil($projectsCount / 3);
@@ -22,12 +22,13 @@
 ?>
 
 
-<div>
+<div data-scroll-section>
   <div class="grid" id="gallery">
 
-
-      <div class="col col-1">
-        <?php snippet('logo'); ?>
+      <div class="col col-1" id="col-1">
+        <div id="logo-container" data-scroll data-scroll-sticky data-scroll-target="#col-1">
+           <?php snippet('logo'); ?>
+        </div>
         <?php snippet('project-group', ['projects' => $projectsGroup1]); ?>
       </div>
 
@@ -40,10 +41,10 @@
       </div>
   </div>
   <div id="about">
-    <h1><?= $page->about() ?></h1>
+    <h1><?= $site->headline() ?></h1>
     <div class="grid">
       <div class="col col-2 col-right">
-        <?= $page->abouttext()->kt() ?>
+        <?= $site->text()->kt() ?>
       </div>
     </div>
   </div>
