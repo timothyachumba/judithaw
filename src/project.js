@@ -20,6 +20,7 @@ window.addEventListener('load', (event) => {
     multiplier: 0.75,
     scrollFromAnywhere: true
   })
+  document.querySelector('body').classList.add('loaded')
 })
 
 window.addEventListener('resize', (event) => {

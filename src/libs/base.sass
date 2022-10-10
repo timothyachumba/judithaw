@@ -67,10 +67,19 @@ html
 .lazyloaded
   opacity: 1
   transform: scale(1)
-  transition: all 1000ms 300ms cubic-bezier(.3,0,.08,1)
+  transition: all 1000ms cubic-bezier(.3,0,.08,1)
 
 .no-js img.lazyload
   display: none
 
 body
   background: $beige
+  opacity: 0
+  transition: opacity 1000ms 500ms ease
+
+  &.loaded
+    opacity: 1
+
+.no-js
+  body
+    opacity: 1

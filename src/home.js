@@ -16,4 +16,5 @@ window.addEventListener('load', (event) => {
       document.querySelector('#logo').classList.remove('scale-down')
     }
   })
+  document.querySelector('body').classList.add('loaded')
 })
