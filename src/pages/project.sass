@@ -16,10 +16,9 @@
       margin: rscale(24,80) rscale(16,80)
 
       h1
-        font-family: 'Love', serif
+        font-family: $love
         font-size: rscale(64,100)
         line-height: 80%
-        // line-height: rscale(60,94)
         font-feature-settings: 'kern' 1, 'ss06', 'liga' 0
         text-transform: uppercase
         font-weight: 400
@@ -28,7 +27,6 @@
         margin: rscale(120,140) 0 0
         z-index: 1
         position: relative
-        // font-display: swap
 
         &.fit
           display: inline-block
@@ -54,7 +52,7 @@
       .intro-text
         p
           margin-bottom: rscale(24,40)
-          font-family: 'Sometimes Times'
+          font-family: $sometimes
           font-size: rscale(20,32)
           line-height: rscale(28,40)
           margin: 0 0 rscale(16,40)
@@ -63,8 +61,8 @@
             margin-bottom: 0
 
     .meta-data
-      font-family: 'Sometimes Times TRIAL'
-      font-weight: 500
+      font-family: $sometimes
+      font-weight: 300
       font-size: 14px
 
       .meta-data-section
@@ -72,7 +70,7 @@
 
         h4
           text-transform: uppercase
-          font-family: 'Factor A TRIAL'
+          font-family: $dmsans
           letter-spacing: 0.05rem
           margin: 0 0 rscale(8,24) 0
           font-size: 12px
@@ -91,7 +89,7 @@
             span
               text-transform: uppercase
               font-style: normal
-              font-family: 'DM Sans'
+              font-family: $dmsans
               font-size: 12px
               flex: 1
 
