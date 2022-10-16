@@ -7,13 +7,19 @@
       position: relative
       display: block
       margin-top: rscale(40,80)
-      width: 70%
+      width: 50%
       transition: transform 1000ms ease
       transform-origin: top left
       will-change: width
 
+      @include sm
+        width: 70%
+
       &.scale-down
-        transform: scale(0.7)
+        transform: scale(1)
+
+        @include sm
+          transform: scale(0.7)
 
   .project-wrapper
 

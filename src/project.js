@@ -3,7 +3,10 @@ import LocomotiveScroll from 'locomotive-scroll'
 import fitty from 'fitty'
 import 'lazysizes'
 
-fitty('.fit')
+fitty('.fit', {
+  minSize: 64,
+  multiLine: true
+})
 
 function setStickyContainersSize () {
   const stikyContainer = document.querySelector('#scroll-direction-wrapper')
@@ -12,17 +15,27 @@ function setStickyContainersSize () {
 }
 
 window.addEventListener('load', (event) => {
-  fitty('.fit')
-  setStickyContainersSize()
+  fitty('.fit', {
+    minSize: 64,
+    multiLine: true
+  })
+  if (window.innerWidth > 920) {
+    setStickyContainersSize()
+  }
   const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     multiplier: 0.75,
-    scrollFromAnywhere: true
+    scrollFromAnywhere: true,
+    tablet: {
+      smooth: true
+    }
   })
   document.querySelector('body').classList.add('loaded')
 })
 
 window.addEventListener('resize', (event) => {
-  setStickyContainersSize()
+  if (window.innerWidth > 920) {
+    setStickyContainersSize()
+  }
 })
