@@ -12,7 +12,7 @@
     $width = rand($minWidth,$maxWidth);
     $maxOffset = $maxWidth - $width;
     $offset = rand($minOffset,$maxOffset);
-    $padding = rand(80,400);
+    $padding = rand(80,300);
     $key = array_rand($align);
     $flexAlign = 'start';
     if ($key = 1) {
