@@ -7,3 +7,10 @@ fields:
   text:
     label: Text
     type: textarea
+  features:
+    label: Features
+    type: structure
+    fields:
+      name:
+        label: Publication
+        type: text

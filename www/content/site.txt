@@ -16,6 +16,37 @@ Say hi, to discuss ways we can work together.
 
 ----
 
+features:
+
+- 
+  name: The Cut
+- 
+  name: Stylist
+- 
+  name: "Woman's Health"
+- 
+  name: Financial Times
+- 
+  name: Cosmopolitan
+- 
+  name: ID Magazine
+- 
+  name: Garage
+- 
+  name: Fashion Canada
+- 
+  name: Selfridge’s Inhouse Magazine
+- 
+  name: Domino Magazine
+- 
+  name: Wallpaper
+- 
+  name: Apartment Theory
+- 
+  name: Magnify Magazine
+
+----
+
 Listed:
 
 - 

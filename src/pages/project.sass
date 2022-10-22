@@ -144,3 +144,51 @@
             img
               max-height: 100vh
               padding: rscale(16,80) 0
+
+    .projects-gallery
+      padding: rscale(120,240) 0
+
+      h3
+        text-transform: uppercase
+        font-family: $factora
+        letter-spacing: 0.05rem
+        margin: 0 0 rscale(24,40) 0
+        font-size: 13px
+        line-height: 130%
+        text-align: center
+
+    .project-wrapper
+
+      .project
+        margin-bottom: rscale(80,160)
+        text-decoration: none
+
+        .project-image-container
+          overflow: hidden
+          margin-bottom: rscale(16,24)
+
+        .project-image
+          display: block
+          width: 100%
+
+          &:hover
+            transform: scale(1.3)
+
+          @inclde sm
+            min-width: auto
+
+        .project-text
+
+          .project-name
+            text-transform: uppercase
+            font-family: $factora
+            letter-spacing: 0.05rem
+            margin: 0 0 rscale(2,4) 0
+            font-size: 13px
+            line-height: 130%
+            text-align: left
+
+          .project-meta
+            font-family: $selfmodern
+            font-size: 14px
+            font-style: italic
