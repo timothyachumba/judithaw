@@ -98,7 +98,9 @@
       column-gap: rscale(16,80)
 
       .column
-        padding: 0 rscale(16,80)
+
+        @include sm
+          padding: 0 rscale(16,80)
 
         &.col-4
           grid-column: span 4 / span 4
@@ -129,7 +131,13 @@
 
         #horizontal-gallery
           display: inline-flex
-          justify-content: center
+          overflow-x: scroll
+          padding: 0 rscale(16,40)
+
+          @include sm
+            justify-content: center
+            overflow-x: visible
+            padding: 0
 
           li
             flex-shrink: 0
@@ -142,8 +150,11 @@
               padding: 0 rscale(16,80)
 
             img
-              max-height: 100vh
+              max-height: 150vw
               padding: rscale(16,80) 0
+
+              @include sm
+                max-height: 100vh
 
     .projects-gallery
       padding: rscale(120,240) 0

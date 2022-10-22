@@ -1,11 +1,21 @@
 footer
-  padding: rscale(80,120) rscale(16,40)
+  padding: 0 rscale(16,40) rscale(16,40) rscale(16,40)
   display: flex
+  flex-direction: column
+  text-align: center
+
+  @include sm
+    flex-direction: row
+    text-align: left
 
   div
     font-family: $selfmodern
     font-style: italic
     font-size: 17px
+    order: 2
+
+    @include sm
+      order: 2
 
   ul
     text-transform: uppercase
@@ -15,11 +25,21 @@ footer
     line-height: 130%
     flex: 1
     display: flex
+    flex-direction: column
     justify-content: flex-end
+    order: 1
+
+    @include sm
+      flex-direction: row
+      order: 2
 
     li
       list-style-type: none
-      margin-left: rscale(16,40)
+      margin-bottom: rscale(16,40)
+
+      @include sm
+        margin-left: rscale(16,40)
+        margin-bottom: 0
 
       a
         color: $black
