@@ -109,6 +109,15 @@
         &.col-12
           grid-column: span 12 / span 12
 
+        h2
+          font-size: rscale(20, 32)
+          font-family: $selfmodern
+          font-style: italic
+          letter-spacing: 0.05rem
+          margin: rscale(24,40) 0 0
+          line-height: 130%
+          text-align: center
+
         ul li
           list-style-type: none
           display: flex
@@ -132,6 +141,7 @@
         #horizontal-gallery
           display: inline-flex
           overflow-x: scroll
+          width: 100%
           padding: 0 rscale(16,40)
 
           @include sm
@@ -152,6 +162,7 @@
             img
               max-height: 150vw
               padding: rscale(16,80) 0
+              width: auto
 
               @include sm
                 max-height: 100vh
