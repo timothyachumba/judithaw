@@ -32,7 +32,7 @@
           <?php if(!$page->link()->isEmpty()): ?>
           <li>
             <span>Project Link</span>
-            <a href="<?= $page->link() ?>"><?= parse_url($page->link())["host"] ?></a>
+            <a target="_blank"href="<?= $page->link() ?>"><?= parse_url($page->link())["host"] ?></a>
           </li>
           <?php endif ?>
           <?php if(!$page->client()->isEmpty()): ?>
