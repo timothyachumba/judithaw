@@ -10,25 +10,27 @@ fitty('.fit', {
 
 function setStickyContainersSize () {
   const stikyContainer = document.querySelector('#scroll-direction-wrapper')
-  const stikyContainerHeight = document.querySelector('.horizontal-gallery').scrollWidth
-  stikyContainer.setAttribute('style', 'height: ' + stikyContainerHeight + 'px')
+  if (stikyContainer !== null) {
+    const stikyContainerHeight = document.querySelector('.horizontal-gallery').scrollWidth
+    stikyContainer.setAttribute('style', 'height: ' + stikyContainerHeight + 'px')
+  }
 }
 
 window.addEventListener('load', (event) => {
+  document.querySelector('body').classList.add('loaded')
+  if (window.innerWidth > 920) {
+    setStickyContainersSize()
+  }
   fitty('.fit', {
     minSize: 64,
     multiLine: true
   })
-  if (window.innerWidth > 920) {
-    setStickyContainersSize()
-  }
   const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     multiplier: 0.75,
-    scrollFromAnywhere: true
+    scrollFromAnywhere: false
   })
-  document.querySelector('body').classList.add('loaded')
 })
 
 window.addEventListener('resize', (event) => {

@@ -12,7 +12,7 @@
     $width = rand($minWidth,$maxWidth);
     $maxOffset = $maxWidth - $width;
     $offset = rand($minOffset,$maxOffset);
-    $padding = rand(80,300);
+    $padding = rand(80,200);
     $key = array_rand($align);
     $flexAlign = 'start';
     if ($key = 1) {
@@ -26,17 +26,17 @@
             <div class="project-image-container" style="background-color: <?= $project->accent() ?>">
               <img
               class="project-image lazyload"
-              data-src="<?= $image->thumb(['width' => 1200])->url() ?>"
-              data-srcset="<?= $image->srcset([800, 1200, 1600]) ?>"
-              src="<?= $image->thumb(['width' => 1200, 'quality' => 30])->url() ?>"
+              data-src="<?= $image->thumb(['width' => 600])->url() ?>"
+              data-srcset="<?= $image->srcset([300, 600, 1200]) ?>"
+              src="<?= $image->thumb(['width' => 600, 'quality' => 30])->url() ?>"
               width="<?= $image->width() ?>"
               alt=""
             >
             <noscript>
               <img
                 class="project-image"
-                src="<?= $image->thumb(['width' => 1200])->url() ?>"
-                srcset="<?= $image->srcset([800, 1200, 1600]) ?>"
+                src="<?= $image->thumb(['width' => 600])->url() ?>"
+                srcset="<?= $image->srcset([300, 600, 1200]) ?>"
                 alt=""
               >
             </noscript>
