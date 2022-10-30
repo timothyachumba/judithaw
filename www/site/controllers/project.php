@@ -1,9 +1,9 @@
 <?php
 
-return function ($page) {
+return function ($pages) {
 
   // get all projects
-  $projects = $page->children()->listed();
+  $projects = $pages->find('home')->children()->listed();
 
   // fetch all tags
   $categories = $projects->pluck('category', ',', true);

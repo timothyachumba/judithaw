@@ -1,10 +1,11 @@
 <?php 
 
-  $minWidth = 60;
+  $minWidth = 70;
   $maxWidth = 100;
   $minOffset = 0;
   $maxOffset = $maxWidth - $minWidth;
   $align = array('left','right');
+
 ?>
 
 <?php foreach($projects as $project): ?>
@@ -18,12 +19,16 @@
     if ($key = 1) {
       $flexAlign = 'end';
     };
+    $field = $project->blueprint()->field('category');
+    $category = $project->category()->value();
   ?>
+
+
   
   <div class="project-wrapper" style="display:flex;flex-direction:column;align-items:flex-<?= $flexAlign ?>;padding-top:<?= $padding ?>px">
       <a data-scroll data-scroll-speed="<?= rand(1,5) ?>" href="<?= $project->url() ?>" class="project" style="width:<?= $width ?>%;margin-<?= $align[$key] ?>:<?= $offset ?>%">
           <?php if($image = $project->cover()->toFiles()->shuffle()->first()): ?>
-            <div class="project-image-container" style="background-color: <?= $project->accent() ?>">
+            <div class="project-image-container" style="background-color: <?= $project->accent() ?>;--b: <?= $project->accent() ?>;">
               <img
               class="project-image lazyload"
               data-src="<?= $image->thumb(['width' => 600])->url() ?>"
@@ -44,7 +49,11 @@
           <?php endif ?>
           <div class="project-text" style="color:<?= $project->accent() ?>">
             <h3 class="project-name"><?= $project->title() ?></h3>
-            <p class="project-meta"><span><?= $project->category() ?></span>, <span><?= $project->client() ?></span></p>
+            <p class="project-meta">
+              <span>
+              <?= $field['options'][$category] ?></span>,
+              <span><?= $project->client() ?></span>
+            </p>
           </div>
         
       </a>

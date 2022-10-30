@@ -1,36 +1,36 @@
 .home
   #logo-container
-    position: relative
-    height: 200px
+    display: block
+    padding: rscale(16,80)
 
     #logo
       position: relative
       display: block
-      margin-top: rscale(40,80)
-
-      width: 50%
-      transition: transform 1000ms ease
-      transform-origin: top left
-      will-change: width
-
-      @include sm
-        width: 70%
-
-      &.scale-down
-        transform: scale(1)
-
-        @include sm
-          transform: scale(0.7)
+      width: 100%
+      max-width: 240px
+      z-index: 1001
 
   .project-wrapper
 
     .project
       margin-bottom: rscale(80,160)
       text-decoration: none
+      position: relative
+
+      &:hover
+        z-index: 1000
+
+        // .project-image-container
+        //   box-shadow: 0 0 0 10000px var(--b)
+
+        // .project-text
+        //   color: $beige !important
 
       .project-image-container
         overflow: hidden
         margin-bottom: rscale(16,24)
+        box-shadow: 0 0 0 0 transparent
+        transition: box-shadow 100ms linear
 
       .project-image
         display: block
@@ -43,7 +43,6 @@
           min-width: auto
 
       .project-text
-
         .project-name
           text-transform: uppercase
           font-family: $factora
@@ -57,8 +56,11 @@
           font-size: 14px
           font-style: italic
 
-  #about
+          a
+            color: inherit
 
+  #about
+    margin: rscale(40,80) 0 0
     h1
       font-family: $love
       font-size: rscale(48,100)
@@ -103,3 +105,32 @@
         font-style: italic
         white-space: nowrap
         will-change: margin
+
+.main-sidebar
+  height: 100vh
+  padding: rscale(40,80) 0
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+  ul
+    font-family: $selfmodern
+    font-style: italic
+    font-size: rscale(16,24)
+
+    li
+      list-style-type: none
+      margin-bottom: rscale(8,16)
+
+      &:last-child
+        margin-bottom: 0
+
+      a
+        text-decoration: none
+        color: $black
+
+        &:hover
+          color: $red
+
+        &.active
+          color: $red

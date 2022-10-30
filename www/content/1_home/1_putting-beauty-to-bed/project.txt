@@ -13,7 +13,7 @@ Accent: #687354
 
 ----
 
-Category: Art Direction
+Category: art-direction
 
 ----
 

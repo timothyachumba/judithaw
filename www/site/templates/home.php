@@ -1,9 +1,13 @@
 <?php snippet('header') ?>
+  
 
-
-
-<div data-scroll-section>
-  <?php $proj = $page->children()->listed()->shuffle(); ?>
+<div data-scroll-section id="main">
+<!-- 
+  <div id="logo-container" data-scroll>
+      <?php snippet('logo'); ?>
+  </div>
+     -->
+  <?php $proj = $projects; ?>
   <?php snippet('gallery', ['proj' => $proj, 'logo' => 'true']) ?>
   <div id="about">
     <h1><?= $site->headline() ?></h1>
@@ -25,6 +29,7 @@
       <?php endforeach ?></li>
     </ul>
   </div>
+  
 </div>
 
 

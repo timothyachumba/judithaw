@@ -24,7 +24,7 @@
         font-weight: 400
         letter-spacing: -0.05rem
         text-align: center
-        margin: rscale(40,140) 0 0
+        margin: rscale(120,140) 0 0
         z-index: 1
         position: relative
 
@@ -32,31 +32,41 @@
           display: inline-block
 
       .image-container
-        height: 50vw
+        height: 100vw
         margin-top: -5%
         overflow: hidden
         display: flex
         justify-content: top
         flex-direction: column
 
+        @include sm
+          height: 50vw
+
         .image
-          height: 60vw
+          height: 110vw
           width: 100%
           flex-shrink: 0
           background-size: cover
           background-position: center center
 
+          @include sm
+            height: 60vw
+
     #intro
       .intro-text
+        margin-top: rscale(32,45)
         p
           margin-bottom: rscale(24,40)
           font-family: $selfmodern
-          font-size: rscale(18,24)
-          line-height: rscale(26,34)
+          font-size: rscale(20,24)
+          line-height: rscale(28,34)
           margin: 0 0 rscale(16,40)
 
           &:last-child
             margin-bottom: 0
+
+        @include sm
+          margin-top: 0
 
     .meta-data
       font-family: $selfmodern
@@ -92,7 +102,7 @@
               font-size: rscale(12,14)
 
     .layout
-      margin: rscale(24,80) 0
+      margin: rscale(56, 240) 0
       display: grid
       grid-template-columns: repeat(12,1fr)
       column-gap: rscale(16,80)

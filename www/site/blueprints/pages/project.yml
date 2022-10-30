@@ -21,13 +21,12 @@ columns:
         contrast:
             - '#F0ECE9'
       category:
-        type: tags
+        type: select
         label: Category
         options:
-          - Interior Design
-          - Editorial Writing
-          - Production
-          - Art Direction
+          interior-design: Interior Design
+          editorial-writing: Editorial Writing
+          art-direction: Art Direction
       client:
         label: Client
         type: text

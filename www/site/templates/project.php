@@ -68,7 +68,7 @@
   <section data-scroll-section class="projects-gallery">
     <h3>More Projects</h3>
   <?php $proj = $pages->find('home')->children()->listed()->not($page->uri())->shuffle(); ?>
-  <?php snippet('gallery', ['proj' => $proj,'logo' => 'false']) ?>
+  <?php snippet('gallery-full', ['proj' => $proj,'logo' => 'false']) ?>
   </section>
 
 </main>
