@@ -2,7 +2,7 @@
 
 return [
   'debug' => true,
-  'cache' => false,
+  'cache' => true,
 
   // The code below is required for the kirby-webpack dev server to work
   // 'url' => function () {
