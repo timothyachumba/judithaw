@@ -24,7 +24,7 @@ if ($block->location() == 'web') {
         class="gallery-image"
         src="<?= $image->thumb(['width' => 600])->url() ?>"
         srcset="<?= $image->srcset([300, 600, 1200]) ?>"
-        alt=""
+        alt="<?= $alt ?>"
       >
   </a>
   <?php else: ?>
@@ -32,7 +32,7 @@ if ($block->location() == 'web') {
         class="gallery-image"
         src="<?= $image->thumb(['width' => 600])->url() ?>"
         srcset="<?= $image->srcset([300, 600, 1200]) ?>"
-        alt=""
+        alt="<?= $alt ?>"
       >
   <?php endif ?>
 

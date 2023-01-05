@@ -30,8 +30,13 @@ window.addEventListener('load', (event) => {
     smooth: true,
     multiplier: 0.75,
     scrollFromAnywhere: false,
-    tablet: {
+    mobile: {
       smooth: true
+    },
+    tablet: {
+      smooth: true,
+      multiplier: 100,
+      scrollFromAnywhere: true
     }
   })
 })

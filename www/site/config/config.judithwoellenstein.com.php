@@ -1,8 +1,8 @@
 <?php
 
 return [
-  'debug' => true,
-  'cache' => false,
+  'debug' => false,
+  'cache' => true,
 
   // The code below is required for the kirby-webpack dev server to work
   // 'url' => function () {
@@ -13,9 +13,11 @@ return [
   // }
 
   'url' => [
-    'http://192.168.4.20:3000/',
-    'http://localhost:3000/'
+    'https://judithwoellenstein.com/'
+  ],
 
+  'panel' =>[
+    'install' => true
   ],
   'routes' => [
       [
