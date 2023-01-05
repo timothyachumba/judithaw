@@ -11,21 +11,11 @@ $ratio   = $block->ratio()->or('auto');
       <?php foreach ($block->images()->toFiles() as $image): ?>
       <li>
         <img
-          class="gallery-image lazyload"
-          data-src="<?= $image->thumb(['width' => 600])->url() ?>"
-          data-srcset="<?= $image->srcset([300, 600, 1200]) ?>"
-          src="<?= $image->thumb(['width' => 600, 'quality' => 30])->url() ?>"
-          width="<?= $image->width() ?>"
+          class="gallery-image"
+          src="<?= $image->thumb(['width' => 600])->url() ?>"
+          srcset="<?= $image->srcset([300, 600, 1200]) ?>"
           alt=""
         >
-        <noscript>
-          <img
-            class="gallery-image"
-            src="<?= $image->thumb(['width' => 600])->url() ?>"
-            srcset="<?= $image->srcset([300, 600, 1200]) ?>"
-            alt=""
-          >
-        </noscript>
       </li>
       <?php endforeach ?>
     </ul>
