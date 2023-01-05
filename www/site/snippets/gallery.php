@@ -42,12 +42,10 @@
       <?php snippet('project-group', ['projects' => $projectsGroup1]); ?>
     </div>
 
-    <div class="col col-1">
+    <div class="col col-1" data-scroll data-scroll-speed="2">
       <?php snippet('project-group', ['projects' => $projectsGroup2]); ?>
     </div>
 
-    <!-- <div class="col col-1">
-      <?php snippet('project-group', ['projects' => $projectsGroup3]); ?>
-    </div>
-     -->
+    
+    
   </div>

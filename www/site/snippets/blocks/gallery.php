@@ -10,7 +10,22 @@ $ratio   = $block->ratio()->or('auto');
     <ul class="horizontal-gallery" data-scroll data-scroll-direction="horizontal" data-scroll-target="#scroll-direction-wrapper" data-scroll-speed="10">
       <?php foreach ($block->images()->toFiles() as $image): ?>
       <li>
-        <?= $image ?>
+        <img
+          class="gallery-image lazyload"
+          data-src="<?= $image->thumb(['width' => 600])->url() ?>"
+          data-srcset="<?= $image->srcset([300, 600, 1200]) ?>"
+          src="<?= $image->thumb(['width' => 600, 'quality' => 30])->url() ?>"
+          width="<?= $image->width() ?>"
+          alt=""
+        >
+        <noscript>
+          <img
+            class="gallery-image"
+            src="<?= $image->thumb(['width' => 600])->url() ?>"
+            srcset="<?= $image->srcset([300, 600, 1200]) ?>"
+            alt=""
+          >
+        </noscript>
       </li>
       <?php endforeach ?>
     </ul>

@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
   
 
-<div data-scroll-section id="main">
+<div data-scroll-section id="main" data-scroll>
 <!-- 
   <div id="logo-container" data-scroll>
       <?php snippet('logo'); ?>
