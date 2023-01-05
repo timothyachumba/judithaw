@@ -29,7 +29,10 @@ window.addEventListener('load', (event) => {
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     multiplier: 0.75,
-    scrollFromAnywhere: false
+    scrollFromAnywhere: false,
+    tablet: {
+      smooth: true
+    }
   })
 })
 
