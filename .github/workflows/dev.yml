@@ -15,11 +15,11 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ftp.judithwoellenstein.com
+        server: ftp.akuko.studio
         username: akuko
         password: ${{ secrets.FTPS_PASSWORD }}
         local-dir: ./www/
-        server-dir: ./akuko/judithaw/
+        server-dir: ./home/akuko/akuko/judithaw/
         exclude: |
           **/.git*
           **/.git*/**
