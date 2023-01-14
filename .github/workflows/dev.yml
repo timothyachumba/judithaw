@@ -15,7 +15,7 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ftp.judithwoellenstein.com
+        server: ftp.new.judithwoellenstein.com
         username: akuko
         password: ${{ secrets.FTPS_PASSWORD }}
         local-dir: ./www/
